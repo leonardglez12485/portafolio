@@ -68,3 +68,21 @@ const typed = new Typed('.multiple-text', {
     delay: 1000,
     loop: true
 });
+
+//-------------------------------------------------
+//=========== Formulario Contact Me!!! =========
+//-------------------------------------------------
+const form = document.querySelector('#contactme');
+const buttonMailto = document.querySelector('#send');
+
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const form1 = new FormData(this);
+
+    // console.log(form1.get('name'), form1.get('email'), form1.get('number'), form1.get('subject'), form1.get('message'));
+    buttonMailto.setAttribute('src', 'mailto:leonardglez12485@gmail.com')
+        // buttonMailto.setAttribute('window.location.href', `mailto:leonardglez12485@gmail.com?Subject=${form1.get('subject')}nombre ${form1.get('name')}number${form1.get('number')}correo ${form1.get('email')}&body=${form1.get('message')}`)
+    buttonMailto.click();
+}
