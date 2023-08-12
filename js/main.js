@@ -73,7 +73,7 @@ const typed = new Typed('.multiple-text', {
 //=========== Formulario Contact Me!!! =========
 //-------------------------------------------------
 const form = document.querySelector('#contactme');
-const buttonMailto = document.querySelector('#send');
+const buttonMailto = document.querySelector('#emailTo');
 
 form.addEventListener('submit', handleSubmit);
 
@@ -82,7 +82,10 @@ function handleSubmit(event) {
     const form1 = new FormData(this);
 
     // console.log(form1.get('name'), form1.get('email'), form1.get('number'), form1.get('subject'), form1.get('message'));
-    buttonMailto.setAttribute('src', 'mailto:leonardglez12485@gmail.com')
-        // buttonMailto.setAttribute('window.location.href', `mailto:leonardglez12485@gmail.com?Subject=${form1.get('subject')}nombre ${form1.get('name')}number${form1.get('number')}correo ${form1.get('email')}&body=${form1.get('message')}`)
+    // buttonMailto.setAttribute('href', 'mailto:leonardglez12485@gmail.com')
+    buttonMailto.setAttribute('href', `mailto:leonardglez12485@gmail.com?Subject=${form1.get('subject')} &body=Mi nombre es: ${form1.get('name')} y mi telefono es el ${form1.get('number')}. ${form1.get('message')}. Contacteme al correo: ${form1.get('email')}`)
+
+
+
     buttonMailto.click();
 }
