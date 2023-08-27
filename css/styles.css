@@ -197,9 +197,10 @@
        margin: 2rem 0 3rem;
    }
    
-   .servoce .services-containe {
+   .service .services-containe {
        min-height: 100vh;
    }
+
    
    .services .heading {
        text-align: center;
@@ -223,6 +224,7 @@
    
    .services-container .services-box {
        flex: 2 2 30rem;
+       height: auto;
        background: var(---second-bg-color);
        padding: 3rem 2rem 4rem;
        border-radius: 2rem;
@@ -423,8 +425,19 @@
    }
    
    @media (max-width: 991px) {
+     
+        /* body{
+            max-width: 90%;
+        } */
+        .home{
+            padding: 5%;
+        }
+        .about{
+            width: 100%;
+        }
        .header {
            padding: 2rem 3%;
+           position: static;
        }
        section {
            padding: 10rem 3% 2rem;
@@ -444,13 +457,15 @@
    }
    
    @media (max-width: 768px) {
+
        #menu-icon {
            display: block;
        }
        .navbar {
-           position: absolute;
+          position: absolute;
            top: 100%;
            left: 0;
+           right: 0;
            width: 100%;
            padding: 1rem 3%;
            background: var(--bg-color);
@@ -498,10 +513,24 @@
    }
    
    @media (max-width: 617px) {
-       .portafolio-container {
-           grid-template-columns: 1fr;
+
+       .portafolio {
+           display: block;
+
+           }
+       .portafolio-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        
        }
-   }
+       .portafolio-box{
+        margin: 5rem;
+        justify-content: center;
+       }
+    
+    }
    
    @media (max-width: 450px) {
        html {
