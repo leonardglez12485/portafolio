@@ -8,9 +8,16 @@
     <!-- Iconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Config CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link href="./lib/animate/animate.min.css" rel="stylesheet">
+    <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+ 
+   
     <!-- Costum JS -->
     <script src="./js/main.js" defer></script>
+    <script src="./js/mains.js" defer></script>
 </head>
 
 <body>
@@ -88,7 +95,64 @@
     </section>
     <!-- Portafolio Section Design  -->
     <section class="portafolio" id="portafolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
+    
+        <div class="row px-xl-5">
+            <div class="col-lg-11" id="div-portafolio">
+                <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#header-carousel" data-slide-to="1"></li>
+                        <li data-target="#header-carousel" data-slide-to="2"></li>
+                        <li data-target="#header-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active" style="height: 430px;">
+                            <img id="img-port" class="position-absolute w-100 h-100" src="./img/juega.png" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Juega y Aprende</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Una web escusiva para niños y sus padres. Muestra las ventajas de la enseñanza a traves de juegos didacticos y vincula algunos de ellos.</p>
+                                    <!-- <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Encarga Ahora</a> -->
+                                </div> 
+                            </div>
+
+                        </div>
+                        
+                        <div class="carousel-item position-relative" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="./img/math.png" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Math Kids</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Api para los mas pequeños de casa. Un divertido juego de Matematicas para niños de Segudno Grado escolar</p>
+                                    <!-- <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Encarga Ahora</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="./img/mercado.png" style="object-fit: cover; ">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Mercado Start</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Loging de un una Api para el Mercado Start en Las Tunas</p>
+                                    <!-- <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Encarga Ahora</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="./img/tienda.png" style="object-fit: cover; ">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Tienda de Regalos</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Las mejores artesanias de la provincia, variedad y belleza resumidas en una sola tienda</p>
+                                    <!-- <a class="btn btn-outline-light py-2 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Encarga Ahora</a> -->
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <h2 class="heading">Latest <span>Project</span></h2>
         <div class="portafolio-container">
             <div class="portafolio-box">
                 <img src="./img/portafolio1.jpg" alt="">
@@ -106,7 +170,7 @@
                     <a href="https://tienda-pepe.vercel.app/"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <!-- <div class="portafolio-box">
+             <div class="portafolio-box">
                 <img src="./img/portafolio3.jpg" alt="">
                 <div class="portafolio-layer">
                     <h4>Media Website</h4>
@@ -114,14 +178,14 @@
                     <a href=""><i class='bx bx-link-external'></i></a>
                 </div>
             </div> -->
-            <div class="portafolio-box">
+            <!-- <div class="portafolio-box">
                 <img src="./img/portafolio3.jpg" alt="">
                 <div class="portafolio-layer">
                     <h4>Shop Online</h4>
                     <p>Backend de una tienda online para ropa y calzado en Las Tunas</p>
                     <a href=""><i class='bx bx-link-external'></i></a>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="portafolio-box">
                 <img src="./img/portafolio5.jpg" alt="">
                 <div class="portafolio-layer">
@@ -138,7 +202,7 @@
                     <a href=""><i class='bx bx-link-external'></i></a>
                 </div>
             </div> -->
-        </div>
+        <!-- </div>  -->
     </section>
 
     <!-- Contact Section Design -->
@@ -179,6 +243,14 @@
 
     <!-- Typed JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+ 
 
 
 
